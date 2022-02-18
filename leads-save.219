@@ -1,0 +1,10 @@
+lalos@34.231.5.219
+
+all_leads = [o for o in leads.get_all()]
+df_leads = pd.DataFrame(all_leads)
+df_leads.to_csv('/tmp/leads.csv')
+
+C:\Users\rehsa\Desktop>pscp -P 2222 -i C:\Users\rehsa\vm-key\vm-key.ppk lalos@34.231.5.219:/tmp/leads.csv leads
+
+cd C:\Users\rehsa\Desktop
+
